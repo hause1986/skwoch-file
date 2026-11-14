@@ -1,0 +1,26 @@
+{
+    "output_filename": "output",
+    "output_extension": ".txt",
+    "max_depth": 50,
+    "ignore_dirs": [
+        ".git",
+        "node_modules",
+        "vendor"
+    ],
+    "allowed_extensions_default": [
+        "php",
+        "js",
+        "css",
+        "txt",
+        "md",
+        "html"
+    ],
+    "user_defaults": {
+        "source_dir": "C:\\OSPanel\\domains",
+        "output_dir": "C:\\WWW\\toolScript\\skwoch\\out",
+        "extensions": [
+            "php"
+        ],
+        "limit_kb": 100
+    }
+}

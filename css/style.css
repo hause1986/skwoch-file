@@ -1,0 +1,173 @@
+body{
+	padding:0;
+	margin: 0;
+	color: #f4dd0b;
+	background-color: #112435;
+	font-size:18px;
+}
+a{
+	color: #f4dd0b;
+	font-size:18px;
+	text-decoration: none;
+}
+.row::after{ clear: both; }
+.row::after,
+.row::before{ display: table; content: " "; }
+.col-md{ min-height: 1px; float:left; width: 100%; }
+.center{ text-align:center; }
+.dis-bl{ display:block; }
+.dis-flex{ display:flex; flex-wrap:wrap; justify-content: space-between; }
+.dis-non{ display:none !important; }
+.pos-rel{ position: relative; }
+
+#header{
+	font-weight: 700;
+	font-size: 20px;
+	width: 100%;
+	height:45px;
+	background-color: #3498DB;
+	color: #fff;
+	line-height:45px;
+	cursor: pointer;
+}
+#content{ margin:0 auto; width:90%; }
+.field{ display: block; margin: 10px 0; }
+
+#head{
+	margin-top: 20px;
+	border-bottom: 1px solid #3498DB;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+}
+#title { font-size: 30px; font-weight: 700; }
+
+/* Buttons */
+.butt {
+    display: block;
+    background-color: #4a6fa5;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+	height:40px;
+    width: 100%;
+	text-align:center;
+	line-height:40px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 0;
+}
+.butt:hover { background-color: #3a5a80; }
+.butt:disabled { background-color: #3a4f6b; cursor: wait; color: #b7c4d6; }
+
+select,
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #1a2d40;
+    border: 1px solid #3498DB;
+    color: #f4dd0b;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+select:focus,
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #f4dd0b;
+}
+
+/****************************/
+/************* BUILDER APP *************/
+
+#builder {
+    border: 1px solid #3498DB;
+    padding: 20px;
+    background-color: rgba(52, 152, 219, 0.1);
+    margin-bottom: 30px;
+}
+
+#build-form .field label,
+#build-form .field-label {
+    display: block;
+    color: #4a6fa5;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#extensions {
+    min-height: 140px;
+    padding: 4px;
+}
+
+#extensions option {
+    padding: 4px 8px;
+    color: #f4dd0b;
+    background-color: #1a2d40;
+}
+
+#extensions option:checked {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+#submit-btn {
+    margin-top: 10px;
+}
+
+/* Статусы */
+.status {
+    margin-top: 20px;
+    padding: 14px 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+    border: 1px solid #3498DB;
+    background-color: rgba(52, 152, 219, 0.15);
+    color: #f4dd0b;
+}
+
+.status.pending {
+    border-color: #3498DB;
+    color: #ffffff;
+}
+
+.status.success {
+    border-color: #27ae60;
+    background-color: rgba(39, 174, 96, 0.15);
+    color: #2ecc71;
+}
+
+.status.warn {
+    border-color: #f39c12;
+    background-color: rgba(243, 156, 18, 0.15);
+    color: #f39c12;
+}
+
+.status.error {
+    border-color: #c0392b;
+    background-color: rgba(192, 57, 43, 0.15);
+    color: #e74c3c;
+}
+
+/* Итоговый список файлов */
+.status .files-list {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #3498DB;
+    background-color: rgba(52, 152, 219, 0.1);
+    color: #ffffff;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 14px;
+}
+
+/************* RESPONSIVE *************/
+@media (max-width: 768px) {
+    #title { font-size: 22px; }
+    #builder { padding: 15px; }
+    .butt { font-size: 16px; }
+}
